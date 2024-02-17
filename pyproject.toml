@@ -1,0 +1,15 @@
+[project]
+name = "hello_world"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Arif Indarto", email = "lifealien2020@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
