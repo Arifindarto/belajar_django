@@ -8,7 +8,8 @@ def base(request):
         'nav': [
             ['/','Home'],
             ['/blog', 'Blog'],
-            ['/auth', 'Auth']
-        ]
+            ['/auth', 'Auth'],
+        ],
+        'banner': 'img/landing.png'
     }
     return render(request, "landing/index.html", context)

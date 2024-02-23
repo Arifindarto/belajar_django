@@ -9,6 +9,8 @@ def base(request):
             ['/','Home'],
             ['/blog', 'Blog'],
             ['/auth', 'Auth']
-        ]
+        ],
+        'banner': 'img/blog.png'
+        
     }
     return render(request, "blog/index.html", context)
