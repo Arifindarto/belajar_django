@@ -6,6 +6,17 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <h2>ini halaman {{subtitle}}</h2>
+
+    <h1>ini halaman {{subtitle}}</h1>
+
+    <ul>
+        
+        {% for link,name in nav %}
+            <li>
+                <a href="{{link}}">{{name}}</a>
+            </li>
+        {% endfor %}
+        
+    </ul>
 </body>
 </html>

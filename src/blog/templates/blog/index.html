@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>ini adalah halaman {{subtitle}}</h1>
+    
+    <ul>
+        
+        {% for link,name in nav %}
+            <li>
+                <a href="{{link}}">{{name}}</a>
+            </li>
+        {% endfor %}
+        
+    </ul>
 </body>
 </html>

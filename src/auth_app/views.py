@@ -4,6 +4,11 @@ from django.shortcuts import render
 def base(request):
     context = {
         'title':'Auuuuuuuth',
-        'subtitle': 'Auuu'
+        'subtitle': 'Auuu',
+        'nav': [
+            ['/','Home'],
+            ['/blog', 'Blog'],
+            ['/auth', 'Auth']
+        ]
     }
     return render(request, "auth/index.html", context)
