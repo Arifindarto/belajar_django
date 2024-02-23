@@ -2,4 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def base(request):
-    return render(request, "blog/index.html")
+    context = {
+        'title': 'Go Blog',
+        'subtitle': 'Blog'
+    }
+    return render(request, "blog/index.html", context)
